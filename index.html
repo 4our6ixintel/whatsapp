@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firebase WhatsApp Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <h2>Room</h2>
+      <input id="nameInput" placeholder="Your name">
+      <input id="roomInput" placeholder="Room ID (e.g. friends)">
+      <button id="joinBtn">Join Room</button>
+
+      <h3>Users</h3>
+      <ul id="usersList"></ul>
+
+      <h3>Chat</h3>
+      <div id="chatWindow"></div>
+      <div class="chat-input">
+        <input id="chatInput" placeholder="Type a message">
+        <button id="sendBtn">Send</button>
+      </div>
+
+      <button id="toggleVideo">Start Video</button>
+    </aside>
+
+    <main id="main">
+      <div id="videoGrid"></div>
+    </main>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>
+
+  <!-- Your app JS -->
+  <script src="app.js"></script>
+</body>
+</html>
